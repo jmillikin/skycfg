@@ -1,17 +1,17 @@
 # Skycfg
 
-https://github.com/golang/go/wiki/Modules
-
+Build
+-----
+`Skycfg` uses Go 1.11 [modules][link-modules] and requires `GO111MODULE=on`.
+Optionally you can use the `Makefile` to build the project:
 ```
-$ go version
-go version go1.11 darwin/amd64
-$ export GO111MODULE=on
-$ go build ./...
-[...]
-$ godoc -http 'localhost:8080'
+make
 ```
 
+Testing
+-------
 ```
-$ protoc --go_out="${GOPATH}/src" --proto_path=testdata test_proto_v2.proto test_proto_v3.proto
-$ go test -v ./...
+make test
 ```
+
+[link-modules]: https://github.com/golang/go/wiki/Modules
