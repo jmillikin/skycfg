@@ -1,0 +1,13 @@
+diff --git a/third_party/com_github_golang_protobuf-gazelle.patch b/third_party/com_github_golang_protobuf-gazelle.patch
+index c362461..3f55010 100644
+--- a/third_party/com_github_golang_protobuf-gazelle.patch
++++ b/third_party/com_github_golang_protobuf-gazelle.patch
+@@ -141,7 +141,7 @@ diff -urN a/proto/BUILD.bazel b/proto/BUILD.bazel
+ +        "extensions.go",
+ +        "lib.go",
+ +        "message_set.go",
+-+        "pointer_unsafe.go",
+++        "pointer_reflect.go",
+ +        "properties.go",
+ +        "table_marshal.go",
+ +        "table_merge.go",

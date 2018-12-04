@@ -25,8 +25,12 @@ import (
 	"github.com/golang/protobuf/proto"
 	yaml "gopkg.in/yaml.v2"
 
+	_ "k8s.io/api/apps/v1"
+	_ "k8s.io/api/batch/v1"
+	_ "k8s.io/api/core/v1"
+	_ "k8s.io/api/storage/v1"
+
 	"github.com/stripe/skycfg"
-	_ "github.com/stripe/skycfg/_examples/wasm/addressbook"
 )
 
 type stubFileReader struct {
